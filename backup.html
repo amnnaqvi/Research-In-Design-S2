@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +61,7 @@
         .hero {
             text-align: center;
             padding: 3rem 2rem;
-            background: url('children smiling.webp') no-repeat center center;
+            background: url('../Media/children smiling.webp') no-repeat center center;
             background-size: cover;
             color: white;
         }
@@ -106,7 +107,7 @@
 
         .section h3 {
             color: #FF7E39;
-                }
+        }
 
         .section img {
             max-width: 100px;
@@ -183,7 +184,8 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #FF7E39; /* Orange color */
+            background-color: #FF7E39;
+            /* Orange color */
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -194,12 +196,15 @@
             font-size: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             cursor: pointer;
-            animation: pulse 2s infinite; /* Pulsating animation */
-            z-index: 1000; /* Ensures it stays on top */
+            animation: pulse 2s infinite;
+            /* Pulsating animation */
+            z-index: 1000;
+            /* Ensures it stays on top */
         }
 
         .floating-call-button:hover {
-            background-color: #902606; /* Darker shade on hover */
+            background-color: #902606;
+            /* Darker shade on hover */
         }
 
         /* Spacing Between Navbar and Hero Section */
@@ -208,8 +213,9 @@
             padding: 3rem 2rem;
             color: #333;
             max-width: 600px;
-            margin: 2rem auto; /* Added margin for spacing */
-            background: url('children smiling.webp') no-repeat center center;
+            margin: 2rem auto;
+            /* Added margin for spacing */
+            background: url('../Media/children smiling.webp') no-repeat center center;
             background-size: cover;
             border-radius: 10px;
             color: white;
@@ -236,7 +242,8 @@
         }
 
         .helpline-option {
-            background-color: rgba(255, 217, 192, 0.8); /* Translucent background color */
+            background-color: rgba(255, 217, 192, 0.8);
+            /* Translucent background color */
             padding: 1rem;
             border-radius: 8px;
             text-align: center;
@@ -247,7 +254,8 @@
         }
 
         .helpline-option:hover {
-            background-color: rgba(255, 184, 153, 0.8); /* Slightly darker translucent on hover */
+            background-color: rgba(255, 184, 153, 0.8);
+            /* Slightly darker translucent on hover */
         }
 
 
@@ -256,7 +264,8 @@
             color: #FF7E39;
             margin-bottom: 0.5rem;
             display: block;
-            animation: pulse 2s infinite; /* Pulsating effect */
+            animation: pulse 2s infinite;
+            /* Pulsating effect */
         }
 
         .helpline-option span {
@@ -278,10 +287,12 @@
                 transform: scale(1);
                 opacity: 1;
             }
+
             50% {
                 transform: scale(1.1);
                 opacity: 0.8;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 1;
@@ -289,6 +300,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header class="navbar">
@@ -310,21 +322,22 @@
                 <i>💬</i> <!-- SMS Icon -->
                 <span>SMS</span>
             </div>
-    
+
             <!-- Call Option -->
             <div class="helpline-option" onclick="alert('Call us for direct support.')">
                 <i>📞</i> <!-- Call Icon -->
                 <span>Call</span>
             </div>
-    
+
             <!-- Email Option -->
             <div class="helpline-option" onclick="alert('Email us for assistance.')">
                 <i>✉️</i> <!-- Email Icon -->
                 <span>Email</span>
             </div>
         </div>
-    
-        <p class="helpline-caption">Reach out anonymously — judgment-free and here to support you. Talk it out with our experienced professionals.</p>
+
+        <p class="helpline-caption">Reach out anonymously — judgment-free and here to support you. Talk it out with our
+            experienced professionals.</p>
     </section>
 
     <div class="floating-call-button" onclick="alert('Call us for direct support.')">
@@ -335,9 +348,10 @@
     <div class="main-content">
         <!-- Journal/Vent Out Section -->
         <div id="journal" class="section">
-            <img src="breat.jpg" alt="Journal Icon">
+            <img src="../Media/breat.jpg" alt="Journal Icon">
             <h3>Journal Your Feelings</h3>
-            <p>This space is for you to express and explore your feelings. You can choose to share your entries with a therapist when you feel ready.</p>
+            <p>This space is for you to express and explore your feelings. You can choose to share your entries with a
+                therapist when you feel ready.</p>
             <form class="journal-form">
                 <textarea placeholder="How are you feeling today?"></textarea>
                 <button class="button" type="submit">Save Entry</button>
@@ -346,7 +360,7 @@
 
         <!-- Consultation Booking Section -->
         <div id="consultation" class="section">
-            <img src="talk.jpg" alt="Consultation Icon">
+            <img src="../Media/talk.jpg" alt="Consultation Icon">
             <h3>Book an Anonymous Consultation</h3>
             <p>Need to talk? Schedule an anonymous consultation with a professional to get the help you need.</p>
             <button class="button">Book Now</button>
@@ -354,7 +368,7 @@
 
         <!-- Resources and Self-Help Tools Section -->
         <div id="resources" class="section">
-            <img src="hope.jpg" alt="Resources Icon">
+            <img src="../Media/hope.jpg" alt="Resources Icon">
             <h3>Resources and Self-Help Tools</h3>
             <p>Explore tools and resources to help you manage stress, practice mindfulness, and more.</p>
             <button class="button">Explore Resources</button>
@@ -392,4 +406,5 @@
         });
     </script>
 </body>
+
 </html>
