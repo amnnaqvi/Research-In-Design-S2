@@ -32,10 +32,21 @@
             background-color: #FF7E39;
             padding: 1rem 2rem;
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .navbar h1 {
             font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar h1 img {
+            width: 30px;
+            height: 30px;
         }
 
         .nav-links {
@@ -47,14 +58,6 @@
             color: white;
             text-decoration: none;
             font-size: 1rem;
-        }
-
-        .helpline-button {
-            background-color: #FF7E39;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
         }
 
         /* Hero Section */
@@ -66,222 +69,59 @@
             color: white;
         }
 
-
         .hero h2 {
             font-size: 2.5rem;
             color: #FFFFFF;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(247, 135, 107, 0.6);
             padding: 0.5rem;
             border-radius: 8px;
             display: inline-block;
         }
 
-        .hero p {
-            max-width: 600px;
-            margin: 1rem auto;
-            font-size: 1.2rem;
-            background: rgba(0, 0, 0, 0.6);
-            color: #FFF;
-            padding: 0.5rem;
-            border-radius: 8px;
-        }
-
-        /* Main Content Styles */
-        .main-content {
-            display: flex;
-            flex-direction: column;
+        .options-container {
+            display: none;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            gap: 2rem;
-            padding: 2rem;
-            background-color: #FFF5EB;
-        }
-
-        .section {
-            max-width: 700px;
-            text-align: center;
-            background: #FFFFFF;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .section h3 {
-            color: #FF7E39;
-        }
-
-        .section img {
-            max-width: 100px;
-            margin-bottom: 1rem;
-        }
-
-        .button {
-            background-color: #FF7E39;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 5px;
+            gap: 1rem;
             margin-top: 1rem;
         }
 
-        /* Journal Form Styles */
-        .journal-form textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #CCC;
-            border-radius: 5px;
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        /* Footer Styles */
-        .footer {
-            text-align: center;
-            padding: 1.5rem;
+        .option {
             background-color: #FF7E39;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
             color: white;
             font-size: 0.9rem;
-        }
-
-        /* Navbar Styles */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #FF7E39;
-            padding: 1rem 2rem;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar h1 {
-            font-size: 1.8rem;
-            margin: 0;
-        }
-
-        .navbar h2 {
-            font-size: 1.2rem;
             text-align: center;
-            color: #2d1e15;
+            cursor: pointer;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
+        .option:hover {
+            background-color: #E05F1E;
         }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        /* Floating Call Button */
-        .floating-call-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #FF7E39;
-            /* Orange color */
-            width: 60px;
-            height: 60px;
+        .pulsing-bubble {
+            position: relative;
+            margin: 2rem auto;
+            background-color: #3CB371;
+            color: #FFFAE0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-size: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
             animation: pulse 2s infinite;
-            /* Pulsating animation */
-            z-index: 1000;
-            /* Ensures it stays on top */
-        }
-
-        .floating-call-button:hover {
-            background-color: #902606;
-            /* Darker shade on hover */
-        }
-
-        /* Spacing Between Navbar and Hero Section */
-        .emergency-helpline {
-            text-align: center;
-            padding: 3rem 2rem;
-            color: #333;
-            max-width: 600px;
-            margin: 2rem auto;
-            /* Added margin for spacing */
-            background: url('../Media/children smiling.webp') no-repeat center center;
-            background-size: cover;
-            border-radius: 10px;
-            color: white;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Overlay Effect for Text Readability */
-        .emergency-helpline::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            z-index: -1;
-        }
-
-        .helpline-options {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 1rem;
-        }
-
-        .helpline-option {
-            background-color: rgba(255, 217, 192, 0.8);
-            /* Translucent background color */
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            width: 100px;
-            transition: background-color 0.3s;
             cursor: pointer;
-            position: relative;
         }
 
-        .helpline-option:hover {
-            background-color: rgba(255, 184, 153, 0.8);
-            /* Slightly darker translucent on hover */
+        .pulsing-bubble:hover {
+            background-color: #2E8B57;
         }
 
-
-        .helpline-option i {
-            font-size: 2rem;
-            color: #FF7E39;
-            margin-bottom: 0.5rem;
-            display: block;
-            animation: pulse 2s infinite;
-            /* Pulsating effect */
-        }
-
-        .helpline-option span {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        /* Caption for Encouragement Message */
-        .helpline-caption {
-            font-size: 1.1rem;
-            color: #ffffff;
-            margin-top: 1.5rem;
-            background-color: #ff7e3977;
-        }
-
-        /* Pulsating Animation */
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -298,14 +138,267 @@
                 opacity: 1;
             }
         }
+
+        /* ListView Section */
+        .list-view {
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .list-item {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .list-item:nth-child(odd) .list-item-image {
+            order: 2;
+            border-left: 5px solid #FF7E39;
+        }
+
+        .list-item:nth-child(even) .list-item-image {
+            order: 0;
+            border-right: 5px solid #FF7E39;
+        }
+
+        .list-item-text {
+            flex: 2;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .list-item-image {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .list-item h3 {
+            color: #FF7E39;
+            margin-bottom: 0.5rem;
+        }
+
+        .list-item p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .list-item-actions {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .list-item-actions input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+
+        .list-item-actions button {
+            padding: 0.5rem 1rem;
+            background-color: #FF7E39;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .list-item-actions button:hover {
+            background-color: #E05F1E;
+        }
+
+        /* Floating Learn Button */
+        .learn-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3CB371;
+            color: #FFFAE0;
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 0.8rem 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .learn-button:hover {
+            background-color: #2E8B57;
+        }
+
+        /* Vertical Bubbles */
+        .bubbles-container {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+            z-index: 1000;
+        }
+
+        .bubble {
+            background-color: #3CB371;
+            color: white;
+            font-size: 1.2rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .bubble:hover {
+            background-color: #2E8B57;
+        }
+
+        /* Hamdard Info Section */
+        .hamdard-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem auto;
+            max-width: 1000px;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        /* Left: Hamdard Info Box */
+        .hamdard-info {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .hamdard-info-image {
+            flex: 1;
+            background: url('../Media/images.jpeg') no-repeat center center;
+            background-size: cover;
+            border-right: 5px solid #3CB371;
+            /* Green border */
+        }
+
+        .hamdard-info-text {
+            flex: 2;
+            padding: 1rem;
+        }
+
+        .hamdard-info-text h3 {
+            color: #FF7E39;
+            margin-bottom: 0.5rem;
+        }
+
+        .hamdard-info-text p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .hamdard-info-text button {
+            background-color: #3CB371;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hamdard-info-text button:hover {
+            background-color: #2E8B57;
+        }
+
+        /* Right: Hamdard App Box */
+        .hamdard-logo {
+            width: 120px;
+            height: 120px;
+            background-color: #3CB371;
+            /* Hamdard green */
+            border-radius: 50%;
+            /* Makes it a circle */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFAE0;
+            /* Pale yellow text */
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hamdard-app-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .hamdard-app-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .hamdard-app-box h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #FF7E39;
+        }
+
+        .hamdard-app-box p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .hamdard-app-box button {
+            background-color: #3CB371;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hamdard-app-box button:hover {
+            background-color: #2E8B57;
+        }
     </style>
 </head>
 
 <body>
-
     <header class="navbar">
-        <h1>Umang Pakistan</h1>
-        <h1></h1>
+        <h1>
+            <img src="../Media/dove.png" alt="Logo">
+            Umang Pakistan
+        </h1>
         <nav class="nav-links">
             <a href="#journal">Journal</a>
             <a> | </a>
@@ -313,100 +406,107 @@
             <a> | </a>
             <a href="#resources">Resources</a>
             <a> | </a>
+            <a>About Us</a>
+            <a> | </a>
             <a href="#language"><img src="../Media/pak.png">اردو</a>
         </nav>
     </header>
 
-    <section class="emergency-helpline">
-        <h3>Your Safe Space for Mental Health Support</h3>
-        <div class="helpline-options">
-            <!-- SMS Option -->
-            <div class="helpline-option" onclick="alert('Reach out via SMS for immediate help.')">
-                <i>💬</i> <!-- SMS Icon -->
-                <span>SMS</span>
-            </div>
-
-            <!-- Call Option -->
-            <div class="helpline-option" onclick="alert('Call us for direct support.')">
-                <i>📞</i> <!-- Call Icon -->
-                <span>Call</span>
-            </div>
-
-            <!-- Email Option -->
-            <div class="helpline-option" onclick="alert('Email us for assistance.')">
-                <i>✉️</i> <!-- Email Icon -->
-                <span>Email</span>
-            </div>
+    <section class="hero">
+        <h2>Your Safe Space for Mental Health Support</h2>
+        <div class="pulsing-bubble" onclick="toggleOptions()">Hamdard</div>
+        <div class="options-container">
+            <div class="option" onclick="alert('Call us for direct support.')">📞 Call</div>
+            <div class="option" onclick="alert('Email us for assistance.')">✉️ Email</div>
+            <div class="option" onclick="alert('Text us for help.')">💬 Text</div>
         </div>
-
-        <p class="helpline-caption">Reach out anonymously — judgment-free and here to support you. Talk it out with our
-            experienced professionals.</p>
     </section>
 
-    <div class="floating-call-button" onclick="alert('Call us for direct support.')">
-        📞 <!-- Call Icon -->
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Journal/Vent Out Section -->
-        <div id="journal" class="section">
-            <img src="../Media/breat.jpg" alt="Journal Icon">
-            <h3>Journal Your Feelings</h3>
-            <p>This space is for you to express and explore your feelings. You can choose to share your entries with a
-                therapist when you feel ready.</p>
-            <form class="journal-form">
-                <textarea placeholder="How are you feeling today?"></textarea>
-                <button class="button" type="submit">Save Entry</button>
-            </form>
+    <section class="hamdard-section">
+        <!-- Left: Hamdard Info Box -->
+        <div class="hamdard-info">
+            <div class="hamdard-info-image"></div>
+            <div class="hamdard-info-text">
+                <h3>Hamdard: Your Partner in Mental Health</h3>
+                <p>Hamdard is here to support you through any mental health episode you may be experiencing. Think of it
+                    as
+                    a friend you can rely on, someone at the other end who will guide and assist you.</p>
+                <button onclick="alert('Learn more about Hamdard!')">Learn More</button>
+            </div>
         </div>
 
-        <!-- Consultation Booking Section -->
-        <div id="consultation" class="section">
-            <img src="../Media/images (4).jpeg" alt="Consultation Icon">
-            <h3>Book an Anonymous Consultation</h3>
-            <p>Need to talk? Schedule an anonymous consultation with a professional to get the help you need.</p>
-            <button class="button">Book Now</button>
+        <!-- Right: Hamdard App Box -->
+        <div class="hamdard-app-box">
+            <div class="hamdard-logo">Hamdard</div>
+            <h4>Try our mobile app</h4>
+            <p>Take Hamdard with you wherever you go.</p>
+            <button onclick="alert('Redirecting to app download!')">Download Now</button>
+        </div>
+    </section>
+
+
+
+
+    <section class="list-view">
+        <div class="list-item">
+            <div class="list-item-text">
+                <h3>Journal Your Feelings</h3>
+                <p>This space is for you to express and explore your feelings. You can choose to share your entries with
+                    a therapist when you feel ready.</p>
+                <div class="list-item-actions">
+                    <input type="text" placeholder="How are you feeling today?">
+                    <button>Save Entry</button>
+                </div>
+            </div>
+            <div class="list-item-image" style="background-image: url('../Media/breat.jpg');"></div>
         </div>
 
-        <!-- Resources and Self-Help Tools Section -->
-        <div id="resources" class="section">
-            <img src="../Media/hope.jpg" alt="Resources Icon">
-            <h3>Resources and Self-Help Tools</h3>
-            <p>Explore tools and resources to help you manage stress, practice mindfulness, and more.</p>
-            <button class="button">Explore Resources</button>
+        <div class="list-item">
+            <div class="list-item-image" style="background-image: url('../Media/images (4).jpeg');"></div>
+            <div class="list-item-text">
+                <h3>Book an Anonymous Consultation</h3>
+                <p>Need to talk? Schedule an anonymous consultation with a professional to get the help you need.</p>
+                <div class="list-item-actions">
+                    <button>Book Now</button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- Footer -->
+        <div class="list-item">
+            <div class="list-item-text">
+                <h3>Resources and Self-Help Tools</h3>
+                <p>Explore tools and resources to help you manage stress, practice mindfulness, and more.</p>
+                <div class="list-item-actions">
+                    <button>Explore Resources</button>
+                </div>
+            </div>
+            <div class="list-item-image" style="background-image: url('../Media/hope.jpg');"></div>
+        </div>
+    </section>
+
     <footer class="footer">
         <p>&copy; Research in Design S2 - Amn Naqvi and Rayyan Shah</p>
         <p>Redesigning Umang Pakistan</p>
     </footer>
 
+    <div class="learn-button" onclick="toggleLearnOptions()">Learn about Hamdard</div>
+    <div class="bubbles-container">
+        <div class="bubble" onclick="alert('Learn more about Hamdard.')">ℹ️</div>
+        <div class="bubble" onclick="alert('Call us for direct support.')">📞</div>
+        <div class="bubble" onclick="alert('Text us for help.')">💬</div>
+        <div class="bubble" onclick="alert('Email us for assistance.')">✉️</div>
+    </div>
+
     <script>
-        // JavaScript for Enhancing UX (like feedback and simple interactivity)
+        function toggleOptions() {
+            const options = document.querySelector('.options-container');
+            options.style.display = options.style.display === 'flex' ? 'none' : 'flex';
+        }
 
-        // Save Journal Entry with Feedback
-        document.querySelector('.journal-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('Your journal entry has been saved. You can choose to share it with a therapist whenever you’re ready.');
-        });
-
-        // Book Consultation Feedback
-        document.querySelector('#consultation .button').addEventListener('click', function () {
-            alert('Redirecting you to the consultation booking page...');
-        });
-
-        // Explore Resources Feedback
-        document.querySelector('#resources .button').addEventListener('click', function () {
-            alert('Redirecting you to explore our self-help tools and resources...');
-        });
-
-        // Helpline Button Interaction
-        document.querySelector('.big-helpline-button').addEventListener('click', function () {
-            alert('Choose an option to get immediate help: Call, Text, or Email.');
-        });
+        function toggleLearnOptions() {
+            const bubbles = document.querySelector('.bubbles-container');
+            bubbles.style.display = bubbles.style.display === 'flex' ? 'none' : 'flex';
+        }
     </script>
 </body>
 
